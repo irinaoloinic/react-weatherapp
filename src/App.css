@@ -1,9 +1,16 @@
+.App{
+  margin: 30px auto;
+  max-width: 600px;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
 }
+
+.App footer{
+font-size: 13px;
+margin: 10px 0;
+text-align: center;
+}
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -11,20 +18,8 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
+
 
 @keyframes App-logo-spin {
   from {
