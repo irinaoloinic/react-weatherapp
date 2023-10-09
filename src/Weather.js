@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import FormattedDate from "./FormattedDate";
 import axios from "axios";
 import "./Weather.css";
 
@@ -16,11 +17,11 @@ function Weather(props){
       description: response.data.condition.description,
       humidity: response.data.temperature.humidity,
       city: response.data.city,
-      time: response.data.time,
+      time: new Date(response.data.time * 1000),
       iconUrl:"http://shecodes-assets.s3.amazonaws.com/api/weather/icons/broken-clouds-day.png"});
       
   
-    }
+  }
 
 if (weatherData.ready){
 return(
@@ -41,7 +42,7 @@ return(
      <div className="row mt-3">
       <div className="col-6">
        <ul>
-        <li>Last updated: {weatherData.time}</li>
+        <li> <FormattedDate time= {weatherData.time} /> </li>
         <li className="text-capitalize">{weatherData.description}</li>
         <li>Humidity: {weatherData.humidity}%</li>
         <li>Wind speed: {weatherData.wind} km/h</li>
