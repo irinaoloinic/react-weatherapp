@@ -18,11 +18,11 @@ const [city, setCity]= useState(props.defaultCity);
       humidity: response.data.temperature.humidity,
       city: response.data.city,
       time: new Date(response.data.time * 1000),
-      iconUrl:"http://shecodes-assets.s3.amazonaws.com/api/weather/icons/broken-clouds-day.png"});
+      iconUrl: response.data.condition.icon_url,
       
   
-  }
-
+  })
+}
 function handleSubmit(event){
   event.preventDefault();
   search();
