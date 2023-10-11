@@ -18,7 +18,7 @@ const [city, setCity]= useState(props.defaultCity);
       humidity: response.data.temperature.humidity,
       city: response.data.city,
       time: new Date(response.data.time * 1000),
-      icon: response.data.condition.icon_url,
+      icon: response.data.condition.icon,
       
   
   })
