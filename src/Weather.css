@@ -46,17 +46,19 @@ margin: 25px;
   font-weight: 400;
   color: rgb(33, 33, 33);
   line-height: 1;
-  font-size: 30px;
+  font-size: 40px;
   margin-left: 0px;
   font-weight: bold;
+  font-size: 55px;
 }
 
 .Weather .unit {
   color: rgb(33, 33, 33);
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 400;
   position: relative;
-  top: -32px;
+  top: -2px;
   vertical-align: top;
   line-height: 1;
+  margin-left: 0;
 }

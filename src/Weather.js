@@ -13,6 +13,7 @@ const [city, setCity]= useState(props.defaultCity);
     console.log(response.data);
     setweatherData({
       ready:true,
+      coordinates: response.data.coordinates,
       temperature:response.data.temperature.current,
       wind: response.data.wind.speed,
       description: response.data.condition.description,
@@ -53,7 +54,7 @@ return(
       </div>
     </form>
     <Weatherinfo data={weatherData} />
-<WeatherForecast />
+    <WeatherForecast coordinates={weatherData.coordinates} />
 
     
   </div>

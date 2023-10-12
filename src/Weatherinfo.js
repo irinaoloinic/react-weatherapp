@@ -21,16 +21,16 @@ function Weatherinfo(props){
       </ul>
        </div>
 
-       <div className="col-6">
-       <div className="clearfix">
-        <div  >
-           <WeatherTemperature celcius={props.data.temperature} />
-        </div>
-       <div >
+       <div className="col-6 d-flex ">
+         <div >
         <WeatherIcon code={props.data.icon} size={52} />
         </div>
-       </div>
-       </div>
+
+        <div >
+           <WeatherTemperature celcius={props.data.temperature} />
+        </div>
+        </div>
+
        </div>
      </div>
    
