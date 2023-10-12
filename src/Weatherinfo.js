@@ -13,7 +13,7 @@ function Weatherinfo(props){
      <div className="row mt-3">
       <div className="col-6">
        
-       <ul>
+       <ul >
         <li> <FormattedDate time= {props.data.time} /> </li>
         <li className="text-capitalize">{props.data.description}</li>
         <li>Humidity: {props.data.humidity}%</li>
